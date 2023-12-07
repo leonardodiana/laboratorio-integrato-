@@ -1,8 +1,9 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
 from db import *
+from models import *
 import requests
 import json
+
 
 app = FastAPI()
 
@@ -11,21 +12,17 @@ app = FastAPI()
 
 r=requests.get('https://fakerapi.it/api/v1/custom?_quantity=50&id=uuid&postingdate=date&entrytype=word&documentno=buildingNumber&itemno=postcode&quantity=number&costamountactual=number&costamountexpected=number')
 dict=r.json()
-data=dict['data']
-print(data)
+data_item=dict['data']
+#print(data_item)
 
-# Pydantic model to define the schema of the data
-class Item(BaseModel):
-    id:str
-    postingdate:str
-    entrytype:str
-    documentno:str
-    itemno:str
-    quantity:int
-    costamountactual:int
-    costamountexpected:int
 
-# Route to create an item
+
+r=requests.get('https://fakerapi.it/api/v1/custom?_quantity=50&id=uuid&postingdate=date&documentno=word&type=word&no=word&operationno=word&itemno=word&description=word&quantity=number&outputquantity=number&scrapquantity=number&directcost=number')
+dict=r.json()
+data_capacity=dict['data']
+print(data_capacity)
+
+# Route to create an item record
 @app.post("/item/", response_model=Item)
 def create_item(item: Item):
     cursor = conn.cursor()
@@ -36,12 +33,30 @@ def create_item(item: Item):
     cursor.close()
     return item
 
+# Route to create a capacity record
+@app.post("/capacity", response_model=Capacity)
+def create_item(capacity: Capacity):
+    cursor = conn.cursor()
+    query = "INSERT INTO capacity_ledger_entry (id, postingdate, documentno, type, no, operationno, itemno,	description, quantity, outputquantity, scrapquantity, directcost) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+    cursor.execute(query, (capacity.id, capacity.postingdate, capacity.documentno, capacity.type, capacity.no, capacity.operationno, capacity.itemno, capacity.description, capacity.quantity, capacity.outputquantity, capacity.scrapquantity, capacity.directcost))
+    conn.commit()
+    capacity.id = cursor.lastrowid
+    cursor.close()
+    return capacity
+
 #route to create all items
 @app.post("/items", response_model=Item)
-def create_items(data:list[Item]):
-    for x in data:
+def create_items(data_item:list[Item]):
+    for x in data_item:
         create_item(x)
-    return data
+    return data_item
+
+#route to create all items
+@app.post("/capacities", response_model=Capacity)
+def create_items(data_capacity:list[Capacity]):
+    for x in data_capacity:
+        create_item(x)
+    return data_capacity
 
 
 # Route to read all items
