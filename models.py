@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field, TypeAdapter
 # Pydantic model to define the schema of the data
 class Item(BaseModel):
     id:str
@@ -11,15 +11,16 @@ class Item(BaseModel):
     costamountexpected:int
 
 class Capacity(BaseModel):
+    etag:str = Field(alias="@odata.etag", default=None)
     id:str
     postingdate:str
-    documentno:str
+    orderno:str
     type:str
     no:str
     operationno:str
     itemno:str
     description:str
-    quantity:int
-    outputquantity:int
-    scrapquantity:int
-    directcost:int	
+    quantity:float
+    outputquantity:float
+    scrapquantity:float
+    directcost:float	

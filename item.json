@@ -1,0 +1,690 @@
+{
+    "@odata.context": "http://localhost:7048/BC210/api/its/administration/v1.0/$metadata#itemledgerentries",
+    "value": [
+        {
+            "@odata.etag": "W/\"JzIwOzE1MTM1MzQwMDA3NTM0NjgwMDcxMTswMDsn\"",
+            "id": "436bceaa-51f5-ed11-af5e-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -300,
+            "costamountexpected": 0,
+            "documentno": "101004"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1MjEzNzA5MDA4Mjk3MDU0NzA3MTswMDsn\"",
+            "id": "4417a538-52f5-ed11-af5e-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -3.15,
+            "costamountexpected": 0,
+            "documentno": "101004"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1MjUwNDQ4MDkwNzIxMzA3NTUyMTswMDsn\"",
+            "id": "4a17a538-52f5-ed11-af5e-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -37.32,
+            "costamountexpected": 0,
+            "documentno": "101004"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1MzQyMzAxMjQxMjIwODA3NzU3MTswMDsn\"",
+            "id": "4f17a538-52f5-ed11-af5e-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -3.69,
+            "costamountexpected": 0,
+            "documentno": "101004"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0OTE5ODAxNDM3ODc0NDQyNjkxMTswMDsn\"",
+            "id": "5417a538-52f5-ed11-af5e-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -5.25,
+            "costamountexpected": 0,
+            "documentno": "101004"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1MTAyOTcyMDIyMTc1ODM1Mjg2MTswMDsn\"",
+            "id": "5d17a538-52f5-ed11-af5e-005056ad8061",
+            "entrytype": "Output",
+            "postingdate": "2024-01-28",
+            "costamountactual": 0,
+            "costamountexpected": 389.01,
+            "documentno": "101004"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1MzMxMTI4MDY5Mjc4ODE3NzAwMTswMDsn\"",
+            "id": "54c415bd-4889-ee11-af6a-005056ad8061",
+            "entrytype": "Output",
+            "postingdate": "2024-01-28",
+            "costamountactual": 0,
+            "costamountexpected": 350.6,
+            "documentno": "1011004"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE2MTg3ODc2ODc1NjQ5MzU0MDY5MTswMDsn\"",
+            "id": "bb6341e2-f089-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -129.67,
+            "costamountexpected": 0,
+            "documentno": "1011004"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzMzkwNzM0Mzk1NTMxNDcwOTY4MTswMDsn\"",
+            "id": "92214af5-208a-ee11-af6a-005056ad8061",
+            "entrytype": "Output",
+            "postingdate": "2024-01-28",
+            "costamountactual": 0,
+            "costamountexpected": 15,
+            "documentno": "101001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE2Mjc1NTQ2NjIzMjEzMzc2NjA5MTswMDsn\"",
+            "id": "31380ab9-7e8f-ee11-af6a-005056ad8061",
+            "entrytype": "Output",
+            "postingdate": "2024-01-28",
+            "costamountactual": 0,
+            "costamountexpected": 350.6,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0MjI3NzM2NDA3MjczNDQ0MDc4MTswMDsn\"",
+            "id": "d9a5a31f-3890-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -100,
+            "costamountexpected": 0,
+            "documentno": "101033"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzNjc5OTE2ODc0MjAwNDg0Mjk1MTswMDsn\"",
+            "id": "fbf28036-3890-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -1.05,
+            "costamountexpected": 0,
+            "documentno": "101033"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1ODI5MTYxNDg4ODI5MDY5MDQwMTswMDsn\"",
+            "id": "00f38036-3890-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -12.44,
+            "costamountexpected": 0,
+            "documentno": "101033"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1OTAyNjI1NzgwMTIwNDMyMDMzMTswMDsn\"",
+            "id": "04f38036-3890-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -1.23,
+            "costamountexpected": 0,
+            "documentno": "101033"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1NjgyMTk3NDA2NDIwNTE5MDQ2MTswMDsn\"",
+            "id": "08f38036-3890-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -1.75,
+            "costamountexpected": 0,
+            "documentno": "101033"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1NzczNTIzMDM4MjE1ODk0MzQ3MTswMDsn\"",
+            "id": "0cf38036-3890-ee11-af6a-005056ad8061",
+            "entrytype": "Output",
+            "postingdate": "2024-01-28",
+            "costamountactual": 0,
+            "costamountexpected": 129.67,
+            "documentno": "101033"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0Mzk1ODA0MjY0OTQxNjUxMTgwMTswMDsn\"",
+            "id": "d5f23cec-3c90-ee11-af6a-005056ad8061",
+            "entrytype": "Output",
+            "postingdate": "2024-01-28",
+            "costamountactual": 0,
+            "costamountexpected": 350.6,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEyNDk1NzQ4MTQ5MjU4MzM1NTQyMTswMDsn\"",
+            "id": "bf7baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -129.67,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0NjYzMjg4OTM5NDA0MjIyNzczMTswMDsn\"",
+            "id": "c57baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -129.68,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0NjQ0OTE5MjQzMTE0MjcwNTQxMTswMDsn\"",
+            "id": "ca7baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -13.16,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0NTUzMDY4NTU3MDg1ODU0MTMwMTswMDsn\"",
+            "id": "cf7baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -3.9,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0Mzg3NzQ3NTQxMTc1MjQxMTM4MTswMDsn\"",
+            "id": "d47baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -3.9,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0Mjk1OTA0MzA1OTc0NjgwMjU4MTswMDsn\"",
+            "id": "d97baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -5.2,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0Mjc3NTQwNjIwNzk0MTI4OTc4MTswMDsn\"",
+            "id": "de7baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -2.7,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0MTg1NjgzODk5OTc4NDA1NTQxMTswMDsn\"",
+            "id": "e37baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -9.77,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0MDIwMzczODg2Mzg5NjkzNzQ5MTswMDsn\"",
+            "id": "e87baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -2.12,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzOTI4NTI0MjY4NDUzNDY4ODY2MTswMDsn\"",
+            "id": "ed7baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -7.2,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzOTEwMTQ4MTY1OTA4NzI4MjkwMTswMDsn\"",
+            "id": "f27baef7-3d90-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2024-01-28",
+            "costamountactual": -15.7,
+            "costamountexpected": 0,
+            "documentno": "101034"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEyOTAwMDEzNDIxNjk1MTg5MDEwMTswMDsn\"",
+            "id": "f7671f82-6093-ee11-af6a-005056ad8061",
+            "entrytype": "Output",
+            "postingdate": "2023-12-05",
+            "costamountactual": 0,
+            "costamountexpected": 350.6,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE2NzU2OTU5MjIyODMwMDQ4NzkyMTswMDsn\"",
+            "id": "087eb4fc-6193-ee11-af6a-005056ad8061",
+            "entrytype": "Output",
+            "postingdate": "2023-12-05",
+            "costamountactual": 0,
+            "costamountexpected": 1402.38,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1MjI4NDQzNzYyNTQ5NTE3MjcyMTswMDsn\"",
+            "id": "743a678f-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -648.36,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1MjY1MTk3NzkyMTA3OTI0NzEzMTswMDsn\"",
+            "id": "7a3a678f-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -648.41,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1MzIwMjkwMjQ2OTQ3NDQwMzI0MTswMDsn\"",
+            "id": "7f3a678f-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -65.79,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE2MjAzODQ5OTE4NTg1MzkxMjIzMTswMDsn\"",
+            "id": "2f50ae95-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -19.5,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE2NDA1OTA4OTM4MDMxNjk1OTkxMTswMDsn\"",
+            "id": "3450ae95-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -19.5,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE2NDYxMDE1OTQ1MDkzNzIyMjMxMTswMDsn\"",
+            "id": "3950ae95-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -26,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0ODg4NzE0NDk0MTIzMzM2NjcyMTswMDsn\"",
+            "id": "66b9389d-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -13.5,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0OTQzODIwNDQzNDUxNTY1ODkyMTswMDsn\"",
+            "id": "6bb9389d-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -48.83,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1MTQ1ODg0MDQ1MzE5MTI4MTQ1MTswMDsn\"",
+            "id": "70b9389d-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -10.6,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzNDU3MjcxODMzODA0MDA3OTc5MTswMDsn\"",
+            "id": "d4ae6fa3-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -36,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzNTEyMzc4ODQzODc1NzU1MDUxMTswMDsn\"",
+            "id": "d9ae6fa3-6393-ee11-af6a-005056ad8061",
+            "entrytype": "Consumption",
+            "postingdate": "2023-12-01",
+            "costamountactual": -78.5,
+            "costamountexpected": 0,
+            "documentno": "101037"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE2NjM4NTQzMjMxOTQzOTEyNzI1MTswMDsn\"",
+            "id": "e342d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -648.36,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE2ODAzODgwMjczODc3MjQxMzE4MTswMDsn\"",
+            "id": "ea42d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -648.41,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE2NzEyMDIwNzE0NTczOTg5ODI1MTswMDsn\"",
+            "id": "ef42d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -65.79,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE2OTE0MDgyMjA4NjExODAyNDYwMTswMDsn\"",
+            "id": "f442d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -19.5,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE3MTE2MTQxMjI4MDU4MTA3MjI4MTswMDsn\"",
+            "id": "f942d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -19.5,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE3MDI0Mjk2MjIwOTc3MzY2MzY0MTswMDsn\"",
+            "id": "fe42d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -26,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEyNTIzOTYyNTM3NzEwMjI4ODkyMTswMDsn\"",
+            "id": "0343d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -13.5,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEyNzI2MDIwNTAxMTgxMjI1MjgwMTswMDsn\"",
+            "id": "0843d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -48.83,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEyNjM0MTgwMDc0NzYzMjUzMjYwMTswMDsn\"",
+            "id": "0d43d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -10.6,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEyODM2MjM1NTczOTg1OTUzMTgwMTswMDsn\"",
+            "id": "1243d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -36,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEyNzQ0MzkwNTY5OTE0OTMzMTQ4MTswMDsn\"",
+            "id": "1743d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-06",
+            "costamountactual": -78.5,
+            "costamountexpected": 0,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEyOTQ2NzEzNjc5NjMyMDQyMTI2MTswMDsn\"",
+            "id": "1c43d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -3501.12,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzMTMwNDEyMjI2MTczNjM0Njg4MTswMDsn\"",
+            "id": "2243d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -3501.41,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzMDM4NTYwNTA3MjExNTcwMDAxMTswMDsn\"",
+            "id": "2743d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -355.24,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzMjQwNjIyMzc0MzU3Mzg4OTU0MTswMDsn\"",
+            "id": "2c43d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -105.3,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzNDQyNjgxMzkzODAzNjkzNzIyMTswMDsn\"",
+            "id": "3143d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -105.3,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzMzUwODM4MTM0NzYyMDg1ODAzMTswMDsn\"",
+            "id": "3643d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -140.4,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzNTUyOTAyNDk1MjQ1NDM5ODAyMTswMDsn\"",
+            "id": "3b43d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -72.9,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzNzU0OTQ4MzkzOTE0NDYwOTQzMTswMDsn\"",
+            "id": "4043d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -263.66,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzNjYzMTAyNjQ0NDk0MDUzMDkyMTswMDsn\"",
+            "id": "4543d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -57.24,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzODY1MTcwMTgxODk0NTc0NTA3MTswMDsn\"",
+            "id": "4a43d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -194.4,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzNzczMzE4MDcxODk4MDA4MTM4MTswMDsn\"",
+            "id": "4f43d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-07",
+            "costamountactual": -423.9,
+            "costamountexpected": 0,
+            "documentno": "1011002"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzEzOTc1NTAwNTY0MzY5ODI0MTUxMTswMDsn\"",
+            "id": "5443d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -2074.74,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0MTU5MTkxMjIyMDE5NzI3NzUwMTswMDsn\"",
+            "id": "5a43d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -2074.91,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0MDY3MzQ2MjY3ODY2NDI4MzUwMTswMDsn\"",
+            "id": "5f43d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -210.51,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0MjY5NDAxMzc3NzAzNDc4MDAwMTswMDsn\"",
+            "id": "6443d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -62.4,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0NDcxNDYwMzk3MTQ5NzgyNzY4MTswMDsn\"",
+            "id": "6943d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -62.4,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0Mzc5NjE3MTI3MzIwNTIzODQxMTswMDsn\"",
+            "id": "6e43d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -83.2,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0NTgxNjgxNDk3OTgyODIxMzI5MTswMDsn\"",
+            "id": "7343d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -43.2,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0NzgzNzMxMjUzNTQ5NTA4MzAzMTswMDsn\"",
+            "id": "7843d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -156.24,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0NjkxODk0NzY0MzA2NjA1NzQ3MTswMDsn\"",
+            "id": "7d43d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -33.92,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0ODkzOTQ5MTc0NjU1OTE1MDczMTswMDsn\"",
+            "id": "8243d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -115.2,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE0ODAyMDk3MDY1MDM5NzkwOTQ0MTswMDsn\"",
+            "id": "8743d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Consumption",
+            "postingdate": "2024-09-08",
+            "costamountactual": -251.2,
+            "costamountexpected": 0,
+            "documentno": "1011003"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1MTMxODQxMzY2NDM5MjIxMzExMTswMDsn\"",
+            "id": "9643d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Output",
+            "postingdate": "2024-09-06",
+            "costamountactual": 0,
+            "costamountexpected": 1752.98,
+            "documentno": "1011001"
+        },
+        {
+            "@odata.etag": "W/\"JzIwOzE1NDgxMTE3NjAwOTIwODg5MjY5MTswMDsn\"",
+            "id": "a343d9da-e73a-ed11-bbaf-6045bd8e5a17",
+            "entrytype": "Output",
+            "postingdate": "2024-09-07",
+            "costamountactual": 0,
+            "costamountexpected": 9466.07,
+            "documentno": "1011002"
+        }
+    ]
+}
+
