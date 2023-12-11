@@ -35,18 +35,17 @@ def clean_request(request: json):
 @app.post("/item/", response_model=Item)
 def create_item(item: Item):
     cursor = conn.cursor()
-    query = "INSERT INTO item_ledger_entry (id, postingdate, entrytype, documentno, itemno, quantity, costamountactual, costamountexpected) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+    query = "INSERT INTO item_ledger_entry (etag, id, postingdate, entrytype, costamountactual, costamountexpected, documentno) VALUES (%s, %s, %s, %s, %s, %s, %s)"
     cursor.execute(
         query,
         (
+            item.etag,
             item.id,
             item.postingdate,
             item.entrytype,
-            item.documentno,
-            item.itemno,
-            item.quantity,
             item.costamountactual,
             item.costamountexpected,
+            item.documentno
         ),
     )
     conn.commit()
@@ -106,11 +105,22 @@ def create_capacities(data_capacity: list[Capacity]):
 @app.get("/items")
 def read_items():
     cursor = conn.cursor()
-    query = "SELECT * FROM item"
+    query = "SELECT * FROM item_ledger_entry"
     cursor.execute(query)
-    item = cursor.fetchall()
+    items = cursor.fetchall()
     cursor.close()
-    return item
+    return items
     # if item is None:
     # raise HTTPException(status_code=404, detail="Item not found")
     # return {"id": item[0], "name": item[1], "description": item[2]}
+
+
+# Route to read all items
+@app.get("/capacities")
+def read_items():
+    cursor = conn.cursor()
+    query = "SELECT * FROM capacity_ledger_entry"
+    cursor.execute(query)
+    capacities = cursor.fetchall()
+    cursor.close()
+    return capacities
