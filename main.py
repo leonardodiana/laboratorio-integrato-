@@ -134,7 +134,7 @@ def create_capacities(data_capacity: list[Capacity]):
 @app.get("/items")
 def read_items():
     cursor = conn.cursor()
-    query = "SELECT * FROM item_ledger_entry"
+    query = "SELECT * FROM itemledgerentries"
     cursor.execute(query)
     items = cursor.fetchall()
     cursor.close()
@@ -148,7 +148,7 @@ def read_items():
 @app.get("/capacities")
 def read_items():
     cursor = conn.cursor()
-    query = "SELECT * FROM capacity_ledger_entry"
+    query = "SELECT * FROM capacityledgerentries"
     cursor.execute(query)
     capacities = cursor.fetchall()
     cursor.close()
