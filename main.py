@@ -10,10 +10,10 @@ from typing import List
 app = FastAPI()
 
 
-def clean_request(request: json):
-    for i in request["value"]:
-        if "@odata.etag" in i:
-            del i["@odata.etag"]
+# def clean_request(request: json):
+#     for i in request["value"]:
+#         if "@odata.etag" in i:
+#             del i["@odata.etag"]
 
 
 # request
@@ -153,3 +153,6 @@ def read_items():
     capacities = cursor.fetchall()
     cursor.close()
     return capacities
+
+    #provare su metabase
+    
