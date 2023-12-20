@@ -19,10 +19,10 @@ def clean_request(request: json):
 # request
 
 
-# r=requests.get('https://fakerapi.it/api/v1/custom?_quantity=50&id=uuid&postingdate=date&entrytype=word&documentno=buildingNumber&itemno=postcode&quantity=number&costamountactual=number&costamountexpected=number')
-# dict=r.json()
+#r=requests.get('https://dummyjson.com/products/1')
+#dict=r.json()
 # data_item=dict['data']
-# #print(data_item)
+#print(r.content)
 
 
 # r=requests.get('https://fakerapi.it/api/v1/custom?_quantity=50&id=uuid&postingdate=date&documentno=word&type=word&no=word&operationno=word&itemno=word&description=word&quantity=number&outputquantity=number&scrapquantity=number&directcost=number')
@@ -35,21 +35,37 @@ def clean_request(request: json):
 @app.post("/item/", response_model=Item)
 def create_item(item: Item):
     cursor = conn.cursor()
-    query = "INSERT INTO item_ledger_entry (etag, id, postingdate, entrytype, costamountactual, costamountexpected, documentno) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    query = '''INSERT INTO itemledgerentries (etag, entry_no, item_no, posting_date,
+     entry_type, source_no, document_no, description, 
+    location_code, quantity, unit_of_measure_code, 
+    item_category_code, document_type, 
+    document_line_no, order_type ,
+     order_no, order_line_no, cost_amount_actual, cost_amount_expected) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'''
     cursor.execute(
         query,
         (
             item.etag,
-            item.id,
-            item.postingdate,
-            item.entrytype,
-            item.costamountactual,
-            item.costamountexpected,
-            item.documentno
+            item.entry_no,
+            item.item_no,
+            item.posting_date,
+            item.entry_type,
+            item.source_no,
+            item.document_no,
+            item.description,
+            item.location_code,
+            item.quantity,
+            item.unit_of_measure_code,
+            item.item_category_code,
+            item.document_type,
+            item.document_line_no,
+            item.order_type,
+            item.order_no,
+            item.order_line_no,
+            item.cost_amount_actual,
+            item.cost_amount_expected
         ),
     )
     conn.commit()
-    item.id = cursor.lastrowid
     cursor.close()
     return item
 
@@ -58,27 +74,40 @@ def create_item(item: Item):
 @app.post("/capacity", response_model=Capacity)
 def create_capacity(capacity: Capacity):
     cursor = conn.cursor()
-    query = """INSERT INTO capacity_ledger_entry (etag, id, postingdate, orderno, type, no, operationno, itemno, description, quantity, outputquantity, scrapquantity, directcost) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
+    query = """INSERT INTO capacityledgerentries (etag, entry_no, posting_date, item_no, type , no, document_no, description, routing_no,
+    routing_reference_no, operation_no, output_quantity, unit_of_measure_code, 
+    scrap_quantity, setup_time, run_time, stop_time, cap_unit_of_measure_code, 
+    starting_time, ending_time, order_type , order_no, order_line_no, employee_no) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
     cursor.execute(
         query,
         (
             capacity.etag,
-            capacity.id,
-            capacity.postingdate,
-            capacity.orderno,
+            capacity.entry_no,
+            capacity.posting_date,
+            capacity.item_no,
             capacity.type,
             capacity.no,
-            capacity.operationno,
-            capacity.itemno,
+            capacity.document_no,
             capacity.description,
-            capacity.quantity,
-            capacity.outputquantity,
-            capacity.scrapquantity,
-            capacity.directcost,
+            capacity.routing_no,
+            capacity.routing_reference_no,
+            capacity.operation_no,
+            capacity.output_quantity,
+            capacity.unit_of_measure_code,
+            capacity.scrap_quantity,
+            capacity.setup_time,
+            capacity.run_time,
+            capacity.stop_time,
+            capacity.cap_unit_of_measure_code,
+            capacity.starting_time,
+            capacity.ending_time,
+            capacity.order_type,
+            capacity.order_no,
+            capacity.order_line_no,
+            capacity.employeeno
         ),
     )
     conn.commit()
-    capacity.id = cursor.lastrowid
     cursor.close()
     return capacity
 
