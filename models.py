@@ -25,7 +25,7 @@ class Capacity(BaseModel):
     etag:str = Field(alias="@odata.etag", default=None)
     entry_no :int
     posting_date:str
-    item_no:int
+    item_no:str
     type :str
     no :str
     document_no :str 
@@ -35,7 +35,7 @@ class Capacity(BaseModel):
     operation_no :str 
     output_quantity:int
     unit_of_measure_code :str
-    scrap_quantity:int
+    scrap_quantity:float
     setup_time:int 
     run_time :int 
     stop_time :int 

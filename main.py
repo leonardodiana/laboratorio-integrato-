@@ -77,7 +77,7 @@ def create_capacity(capacity: Capacity):
     query = """INSERT INTO capacityledgerentries (etag, entry_no, posting_date, item_no, type , no, document_no, description, routing_no,
     routing_reference_no, operation_no, output_quantity, unit_of_measure_code, 
     scrap_quantity, setup_time, run_time, stop_time, cap_unit_of_measure_code, 
-    starting_time, ending_time, order_type , order_no, order_line_no, employee_no) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
+    starting_time, ending_time, order_type , order_no, order_line_no, employeeno) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
     cursor.execute(
         query,
         (
@@ -117,7 +117,7 @@ def create_capacity(capacity: Capacity):
 def create_items(data_item: list[Item]):
     for x in data_item:
         create_item(x)
-    return data_item
+    return data_item[0]
 
 
 # route to create all items
@@ -127,7 +127,7 @@ def create_capacities(data_capacity: list[Capacity]):
     #data=ta.validate_python(data_capacity)
     for x in data_capacity:
         create_capacity(x)
-    return data_capacity
+    return data_capacity[0]
 
 
 # Route to read all items
