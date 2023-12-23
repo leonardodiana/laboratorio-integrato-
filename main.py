@@ -31,16 +31,23 @@ app = FastAPI()
 # print(data_capacity)
 
 
+
 # Route to create an item record
 @app.post("/item/", response_model=Item)
-def create_item(item: Item):
+def create_or_update_item(item: Item):
     cursor = conn.cursor()
     query = '''INSERT INTO itemledgerentries (etag, entry_no, item_no, posting_date,
      entry_type, source_no, document_no, description, 
     location_code, quantity, unit_of_measure_code, 
     item_category_code, document_type, 
     document_line_no, order_type ,
-     order_no, order_line_no, cost_amount_actual, cost_amount_expected) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'''
+    order_no, order_line_no, cost_amount_actual, cost_amount_expected) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) ON DUPLICATE KEY UPDATE 
+    item_no = VALUES(item_no), posting_date = VALUES(posting_date), entry_type = VALUES(entry_type), 
+    source_no = VALUES(source_no), document_no = VALUES(document_no), description = VALUES(description), 
+    location_code = VALUES(location_code), quantity = VALUES(quantity), unit_of_measure_code = VALUES(unit_of_measure_code), 
+    item_category_code = VALUES(item_category_code), document_type = VALUES(document_type), 
+    document_line_no = VALUES(document_line_no), order_type = VALUES(order_type), 
+    order_no = VALUES(order_no), order_line_no = VALUES(order_line_no), cost_amount_actual = VALUES(cost_amount_actual), cost_amount_expected= VALUES(cost_amount_expected)'''
     cursor.execute(
         query,
         (
@@ -72,12 +79,13 @@ def create_item(item: Item):
 
 # Route to create a capacity record
 @app.post("/capacity", response_model=Capacity)
-def create_capacity(capacity: Capacity):
+def create_or_update_capacity(capacity: Capacity):
     cursor = conn.cursor()
     query = """INSERT INTO capacityledgerentries (etag, entry_no, posting_date, item_no, type , no, document_no, description, routing_no,
     routing_reference_no, operation_no, output_quantity, unit_of_measure_code, 
     scrap_quantity, setup_time, run_time, stop_time, cap_unit_of_measure_code, 
-    starting_time, ending_time, order_type , order_no, order_line_no, employeeno) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
+    starting_time, ending_time, order_type , order_no, order_line_no, employeeno) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    ON DUPLICATE KEY UPDATE posting_date = VALUES(posting_date), item_no = VALUES(item_no), type = VALUES(type), no = VALUES(no), document_no = VALUES(document_no), description = VALUES(description), routing_no = VALUES(routing_no), routing_reference_no = VALUES(routing_reference_no), operation_no = VALUES(operation_no), output_quantity = VALUES(output_quantity), unit_of_measure_code = VALUES(unit_of_measure_code), scrap_quantity = VALUES(scrap_quantity), setup_time = VALUES(setup_time), run_time = VALUES(run_time), stop_time = VALUES(stop_time), cap_unit_of_measure_code = VALUES(cap_unit_of_measure_code), starting_time = VALUES(starting_time), ending_time = VALUES(ending_time), order_type = VALUES(order_type), order_no = VALUES(order_no), order_line_no = VALUES(order_line_no)"""
     cursor.execute(
         query,
         (
@@ -116,17 +124,15 @@ def create_capacity(capacity: Capacity):
 @app.post("/items", response_model=Item)
 def create_items(data_item: list[Item]):
     for x in data_item:
-        create_item(x)
+        create_or_update_item(x)
     return data_item[0]
 
 
 # route to create all items
 @app.post("/capacities", response_model=Capacity)
 def create_capacities(data_capacity: list[Capacity]):
-    #ta=TypeAdapter(List[Capacity])
-    #data=ta.validate_python(data_capacity)
     for x in data_capacity:
-        create_capacity(x)
+        create_or_update_capacity(x)
     return data_capacity[0]
 
 
@@ -139,9 +145,6 @@ def read_items():
     items = cursor.fetchall()
     cursor.close()
     return items
-    # if item is None:
-    # raise HTTPException(status_code=404, detail="Item not found")
-    # return {"id": item[0], "name": item[1], "description": item[2]}
 
 
 # Route to read all items
@@ -155,4 +158,4 @@ def read_items():
     return capacities
 
     #provare su metabase
-    
+
